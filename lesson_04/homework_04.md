@@ -35,22 +35,24 @@
 | `read_30s` | полминуты на странице | Оставляли вкладку с сайтом открытой и активной минимум 30 секунд. |
 | `form_error` | форма не прошла проверку браузера | Пытались отправить форму с незаполненными обязательными полями или ошибками валидации. |
 
-![Файл metrics.js в проекте и строка подключения](screens/01-code.png)
+![Подключение metrics.js в HTML](screens/01-code.png)
+
+![Содержимое metrics.js: четыре обработчика событий в репозитории](screens/08-metrics-code.png)
 
 ## 3. События в DebugView
 
 | Поле | Значение |
 |---|---|
-| Дата и время проверки | 25.09.2026 22:45 |
+| Дата и время проверки | 26.10.2026, около 01:12 по времени в DebugView |
 | Как подключали отладку | Tag Assistant |
-| Какие из четырёх событий пришли | В Realtime видны utm_visit, read_30s и form_error на кадре 02, nav_click — на кадре 04 |
-| Какие не пришли и почему | Все четыре события подтверждены кадрами Realtime. Проверка в DebugView пока не подтверждена |
+| Какие из четырёх событий пришли | В DebugView видны все четыре события: form_error — 6, nav_click — 2, read_30s — 1, utm_visit — 1 |
+| Какие не пришли и почему | Все четыре события пришли; отсутствующих нет |
 
-![События в Realtime; кадр DebugView пока отсутствует](screens/02-debugview.png)
+![DebugView с четырьмя событиями и ресурсом Resolushh](screens/02-debugview.png)
 
 ## 4. Параметры события `utm_visit`
 
-**Чистая ссылка для повторной проверки:**
+**Ссылка, по которой открывали сайт:**
 
 ```
 https://test-site-ashy-iota.vercel.app/?utm_source=vk&utm_medium=social&utm_campaign=hw4_test
@@ -60,12 +62,18 @@ https://test-site-ashy-iota.vercel.app/?utm_source=vk&utm_medium=social&utm_camp
 |---|---|---|
 | `utm_source` | vk | vk |
 | `utm_medium` | social | social |
-| `utm_campaign` | hw4_test | После hw4_test есть лишняя разметка; точного совпадения нет |
+| `utm_campaign` | hw4_test | hw4_test |
 | `landing_page` | — | / |
 
-![Раскрытое событие utm_visit со значениями меток](screens/03-utm-params.png)
+![Параметр utm_campaign: hw4_test](screens/03-utm-params.png)
 
-> Источник vk и канал social передались правильно. В utm_campaign попала лишняя разметка, поэтому проверку кампании нужно повторить по чистой ссылке выше. Параметр landing_page=/ передаёт скрипт metrics.js.
+![Параметр utm_source: vk](screens/05-utm-source.png)
+
+![Параметр utm_medium: social](screens/06-utm-medium.png)
+
+![Параметр landing_page: /](screens/07-landing-page.png)
+
+> Метки передались без изменений: vk / social / hw4_test. На отдельных кадрах раскрыты параметры одного события utm_visit со временем 01:12:06. Параметр landing_page=/ передаёт скрипт metrics.js.
 
 ## 5. Событие вне отладки
 
@@ -80,11 +88,9 @@ https://test-site-ashy-iota.vercel.app/?utm_source=vk&utm_medium=social&utm_camp
 
 ## 6. Что эти метрики показывают про сайт
 
-> При тестировании записались 4 события form_error, по одному read_30s и utm_visit, а также 2 события nav_click на отдельном кадре. Обработчики срабатывают. Чтобы сравнить популярность разделов, нужны значения link_text.
+> В DebugView записались 6 событий form_error, 2 nav_click, по одному read_30s и utm_visit. Сработали проверка формы, клики по меню, ожидание 30 секунд и чтение меток. Чтобы сравнить популярность разделов, нужны значения link_text. Отдельный кадр Realtime подтверждает 2 события nav_click вне отладки.
 
 ## 7. Что не получилось
-
-> Пока нет кадра DebugView с четырьмя событиями. Нужно повторить проверку utm_campaign без лишней разметки и добавить скрин содержимого metrics.js вместе с его подключением.
 
 ## 8. Использование ИИ
 
