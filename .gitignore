@@ -13,3 +13,17 @@ tokens*.json
 # сырые выгрузки сервисов
 exports/raw/
 *.tmp
+
+# Local course production files; public deliverables live in the project repository
+analytics-private/
+reel-tropa/
+design-refresh/
+design-release/
+promo-rollout/
+output/
+*.zip
+CONTINUE_TROPA.md
+NEXT_STEPS_TROPA.md
+PROGRESS_TROPA.md
+ANALYTICS_CHECK_2026-10-28.md
+design-release.py
