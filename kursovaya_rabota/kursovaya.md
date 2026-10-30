@@ -1,36 +1,48 @@
-# Курсовая работа · бланк ссылок
+# Курсовая работа · бланк сдачи
 
-**Студент:** Зотов Владислав Сергеевич  
-**Группа:** РПО 9/25/3  
-**ТЗ:** № ТЗ-11/2026, учебный турклуб «Тропа»  
-**Дата обновления:** 30.10.2026
+**Студент:** Зотов Владислав Сергеевич
 
-## Материалы
+**Группа:** РПО 9/25/3
 
-- Репозиторий: https://github.com/Resolushh/tz-11-turklub-tropa
-- Сайт: https://tz-11-turklub-tropa-phi.vercel.app/
-- Описание: https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/opisanie.md
-- Проверки: https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/verification.md
-- Аналитическая записка: https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/report.md
-- Статус требований: https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/status.md
-- Заявки и UTM, читатель по ссылке: https://docs.google.com/spreadsheets/d/11_X-0ho07vGj-Q-Z5V2aeUz0e2_W9zXHBeM34XoDY_c/edit
-- Instagram: https://www.instagram.com/tropa_winter_hiking/
-- Reel: https://www.instagram.com/reel/DfFy1SzKrMz/
-- ManyChat и подтверждения: https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/manychat.md
-- Реестр: https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/utm.csv
-- Афиша QR: https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/afisha.pdf
-- Промежуточная презентация: https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/presentation/zashchita.pdf
+**ТЗ:** № ТЗ-11/2026 · компания «Тропа»
 
-Measurement ID: **G-JG7PNX1WWW**. Выдача Viewer преподавателю исключена пользователем.
+**Дата проверки:** 30.10.2026
 
-## Что выполнено
+## Ссылки
 
-Сайт и согласованный дизайн опубликованы; адаптивность и Lighthouse проверены. Работают форма, таблица, промокод и UTM. События подтверждены по совокупности живых проверок, включая автоматический form_submit. Реальный QR-тест и путь Instagram/ManyChat → заявка → Realtime выполнены. Партнёрские ссылки dazai/Resolushh проверены. Reports и Explore сохранены.
+| Что | Ссылка |
+|---|---|
+| Репозиторий проекта | https://github.com/Resolushh/tz-11-turklub-tropa |
+| Сайт на Vercel | https://tz-11-turklub-tropa-phi.vercel.app/ |
+| Описание работы `docs/opisanie.md` | https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/opisanie.md |
+| Презентация `presentation/zashchita.pdf` | https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/presentation/zashchita.pdf — промежуточная; финальная отложена |
+| Таблица заявок (доступ на просмотр) | https://docs.google.com/spreadsheets/d/11_X-0ho07vGj-Q-Z5V2aeUz0e2_W9zXHBeM34XoDY_c/edit |
+| Reel с автоответом | https://www.instagram.com/reel/DfFy1SzKrMz/ |
+| Instagram | https://www.instagram.com/tropa_winter_hiking/ |
+| Схема работы | https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/scheme.png |
+| Аналитическая записка | https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/report.md |
+| Проверки | https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/verification.md |
+| Реестр UTM, включая dazai и Resolushh | https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/utm.csv |
+| ManyChat и подтверждения | https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/manychat.md |
+| Афиша QR | https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/afisha.pdf |
+| Статус требований | https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/status.md |
 
-## Границы сдачи
+**Measurement ID ресурса GA4:** G-JG7PNX1WWW
 
-Точное оповещение Session source не создано из-за ограничения конструктора. Исторические заявки и обработанные события не совпали полностью; расхождение документировано. Ветка НОВИЧОК проверена до страницы маршрутов, её заявка отдельно не проведена. U-01/U-04 не объявлены размещёнными. DataLens исключён; ВК/Telegram/YouTube имитируются полными UTM-ссылками, сокращатель не требуется. Кнопки Telegram/WhatsApp на сайте — учебные заглушки. Финальная презентация отложена пользователем.
+## Перед отправкой
 
-Это комплект подтверждённых материалов с ограничениями, не заявление о буквальном выполнении всех пунктов исходного PDF.
+- [x] Репозиторий публичный, у него заполнены описание, Website и Topics.
+- [x] README проекта содержит таблицу ссылок в начале; ссылки на материалы заполнены.
+- [x] В `docs/opisanie.md` размещены кадры и ссылки на доказательства, пустых заготовок нет.
+- [ ] Схема работы лежит в `docs/scheme.png` и есть в финальной презентации: файл схемы готов, финальная презентация отложена.
+- [ ] Презентация в PDF, доклад укладывается в 7 минут: промежуточный PDF есть, финальный доклад ещё не проверен.
 
-ИИ использован для разработки, правок и документации. Показатели не выдумывались; источники и кадры доступны в протоколах проекта.
+**Не получилось:** создать оповещение с точным условием Session source = instagram — такого параметра нет в доступном конструкторе. Исторические заявки и обработанные события `generate_lead` полностью не совпадают; расхождение описано в протоколе, прошлые события не восстанавливались.
+
+**Уточнения объёма и оставшиеся проверки:** Ветка НОВИЧОК проверена до страницы маршрутов, её заявка отдельно не проведена. U-01/U-04 не объявлены размещёнными. DataLens исключён; ВК/Telegram/YouTube имитируются полными UTM-ссылками, сокращатель не требуется. Кнопки Telegram/WhatsApp на сайте — учебные заглушки. Финальная презентация отложена пользователем.
+
+Выдача Viewer преподавателю исключена пользователем; соответствующая строка исходного бланка убрана.
+
+**ИИ:** использовался для разработки сайта, правок дизайна, JavaScript и Apps Script, формул, структуры и оформления документации. Показатели взяты из сохранённых проверок. Журнал: https://github.com/Resolushh/tz-11-turklub-tropa/blob/main/docs/prompts.md
+
+Бланк заполнен по образцу преподавателя: https://github.com/MaximBytecamp/funnel-project-template/blob/main/kursovaya_rabota/kursovaya.md . Отметки отражают подтверждённое состояние, а не полное выполнение исходного ТЗ.
